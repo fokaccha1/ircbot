@@ -1,6 +1,6 @@
 module.exports = (robot) ->
-  robot.hear /hoge/i, (msg) ->
-    msg.send "fuga"
+  robot.respond /meshi/i, (msg) ->
+    msg.send "飯☆時 手洗いうがい"
 
-  robot.hear /fuga/i, (msg) ->
-    msg.send "hoge, fuga"
+  robot.hear /(ゴホン|ゲホン|ごほん|げほん|げほっ|ごほっ)$/, (msg) ->
+    msg.send "#{msg.message.user.name}: あなたの風邪はどこから？"
