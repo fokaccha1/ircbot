@@ -3,7 +3,7 @@
 ###How to execute
 
 ```
-$ git clone
+$ git clone git@github.com:fokaccha1/ircbot.git
 $ cd ircbot
 $ node install
 $ cp runhubot.sh.template runhubot.sh
