@@ -1,0 +1,8 @@
+#!/bin/bash
+
+export HUBOT_IRC_SERVER="サーバー名"
+export HUBOT_IRC_NICK="IRCニックネーム"
+export HUBOT_IRC_ROOMS="#IRCチャンネル"
+export HUBOT_IRC_PORT="ポート番号"
+
+bin/hubot -a irc --name ircbot
