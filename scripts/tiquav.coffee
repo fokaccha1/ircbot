@@ -5,7 +5,8 @@ module.exports = (robot) ->
                   .query(q: word).get()
     request (err, res, body) ->
       try
-        img = JSON.parse body
-        msg.send "http://img.tiqav.com/#{img[0].id}.th.#{img[0].ext}"
+        json = JSON.parse body
+        img = msg.random json
+        msg.send "http://img.tiqav.com/#{img.id}.th.#{img.ext}"
       catch error
         msg.send "Jsonがパースできないよ"
