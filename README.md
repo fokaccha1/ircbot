@@ -1,6 +1,6 @@
-#ircbot
+# ircbot
 
-###How to execute
+### How to execute
 
 ```
 $ git clone git@github.com:fokaccha1/ircbot.git
